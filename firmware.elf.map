@@ -1,0 +1,181 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+                              /tmp/ccJhqrEM.o (memset)
+
+Discarded input sections
+
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .group         0x0000000000000000        0xc /tmp/ccJhqrEM.o
+ .text          0x0000000000000000        0x0 /tmp/ccJhqrEM.o
+ .data          0x0000000000000000        0x0 /tmp/ccJhqrEM.o
+ .bss           0x0000000000000000        0x0 /tmp/ccJhqrEM.o
+ .text          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008000000 0x0000000000010000 xr
+SRAM             0x0000000020000000 0x0000000000005000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /tmp/ccJhqrEM.o
+LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a
+                0x0000000020005000                _esram = (ORIGIN (SRAM) + LENGTH (SRAM))
+
+.isr_vector     0x0000000008000000       0xec
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000       0xec /tmp/ccJhqrEM.o
+                0x0000000008000000                isr_vectors
+
+.text           0x00000000080000ec        0x0
+                0x00000000080000ec                . = ALIGN (0x4)
+ *(.text)
+ *(.rodata)
+                0x00000000080000ec                . = ALIGN (0x4)
+                0x00000000080000ec                _etext = .
+
+.glue_7         0x00000000080000ec        0x0
+ .glue_7        0x00000000080000ec        0x0 linker stubs
+
+.glue_7t        0x00000000080000ec        0x0
+ .glue_7t       0x00000000080000ec        0x0 linker stubs
+
+.vfp11_veneer   0x00000000080000ec        0x0
+ .vfp11_veneer  0x00000000080000ec        0x0 linker stubs
+
+.v4_bx          0x00000000080000ec        0x0
+ .v4_bx         0x00000000080000ec        0x0 linker stubs
+
+.text.startup.main
+                0x00000000080000ec       0x28
+ .text.startup.main
+                0x00000000080000ec       0x28 /tmp/ccJhqrEM.o
+                0x00000000080000ec                main
+
+.text._reset    0x0000000008000114       0x28
+ .text._reset   0x0000000008000114       0x28 /tmp/ccJhqrEM.o
+                0x0000000008000114                _reset
+
+.iplt           0x000000000800013c        0x0
+ .iplt          0x000000000800013c        0x0 /tmp/ccJhqrEM.o
+
+.text.memset    0x000000000800013c       0x10
+ .text.memset   0x000000000800013c       0x10 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x000000000800013c                memset
+
+.rel.dyn        0x000000000800014c        0x0
+ .rel.iplt      0x000000000800014c        0x0 /tmp/ccJhqrEM.o
+
+.data           0x0000000020000000        0x0 load address 0x000000000800014c
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _edata = .
+
+.igot.plt       0x0000000020000000        0x0 load address 0x000000000800014c
+ .igot.plt      0x0000000020000000        0x0 /tmp/ccJhqrEM.o
+
+.bss            0x0000000020000000        0x0 load address 0x000000000800014c
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sbss = .
+ *(.bss)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _ebss = .
+OUTPUT(firmware.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x0000000000000000      0x56d
+ .debug_info    0x0000000000000000      0x56d /tmp/ccJhqrEM.o
+
+.debug_abbrev   0x0000000000000000      0x234
+ .debug_abbrev  0x0000000000000000      0x234 /tmp/ccJhqrEM.o
+
+.debug_loc      0x0000000000000000      0x132
+ .debug_loc     0x0000000000000000      0x132 /tmp/ccJhqrEM.o
+
+.debug_aranges  0x0000000000000000       0x28
+ .debug_aranges
+                0x0000000000000000       0x28 /tmp/ccJhqrEM.o
+
+.debug_ranges   0x0000000000000000       0x18
+ .debug_ranges  0x0000000000000000       0x18 /tmp/ccJhqrEM.o
+
+.debug_macro    0x0000000000000000     0x1875
+ .debug_macro   0x0000000000000000      0x17c /tmp/ccJhqrEM.o
+ .debug_macro   0x000000000000017c      0xa60 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000000bdc       0x22 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000000bfe       0x8e /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000000c8c       0x51 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000000cdd      0x103 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000000de0       0x6a /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000000e4a      0x1df /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000001029       0x52 /tmp/ccJhqrEM.o
+ .debug_macro   0x000000000000107b       0x18 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000001093       0x3c /tmp/ccJhqrEM.o
+ .debug_macro   0x00000000000010cf       0x34 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000001103      0x174 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000001277      0x341 /tmp/ccJhqrEM.o
+ .debug_macro   0x00000000000015b8       0x10 /tmp/ccJhqrEM.o
+ .debug_macro   0x00000000000015c8       0x16 /tmp/ccJhqrEM.o
+ .debug_macro   0x00000000000015de       0x43 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000001621       0x34 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000001655       0x1c /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000001671       0x52 /tmp/ccJhqrEM.o
+ .debug_macro   0x00000000000016c3       0x22 /tmp/ccJhqrEM.o
+ .debug_macro   0x00000000000016e5       0x10 /tmp/ccJhqrEM.o
+ .debug_macro   0x00000000000016f5       0x52 /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000001747       0xd5 /tmp/ccJhqrEM.o
+ .debug_macro   0x000000000000181c       0x1c /tmp/ccJhqrEM.o
+ .debug_macro   0x0000000000001838       0x3d /tmp/ccJhqrEM.o
+
+.debug_line     0x0000000000000000      0x3b2
+ .debug_line    0x0000000000000000      0x3b2 /tmp/ccJhqrEM.o
+
+.debug_str      0x0000000000000000     0x607f
+ .debug_str     0x0000000000000000     0x607f /tmp/ccJhqrEM.o
+                                       0x628a (size before relaxing)
+
+.comment        0x0000000000000000       0x49
+ .comment       0x0000000000000000       0x49 /tmp/ccJhqrEM.o
+                                         0x4a (size before relaxing)
+
+.ARM.attributes
+                0x0000000000000000       0x2d
+ .ARM.attributes
+                0x0000000000000000       0x2d /tmp/ccJhqrEM.o
+ .ARM.attributes
+                0x000000000000002d       0x2d /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+
+.debug_frame    0x0000000000000000       0x58
+ .debug_frame   0x0000000000000000       0x38 /tmp/ccJhqrEM.o
+ .debug_frame   0x0000000000000038       0x20 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
