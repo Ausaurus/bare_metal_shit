@@ -39,16 +39,17 @@ void SysTick_Handler(void);
 static inline void systick_init(uint32_t ticks);
 void delay(unsigned ms);
 bool timer_expired(uint32_t *t, uint32_t prd, uint32_t now);
+static inline void clock_setup();
 __attribute__((noreturn))void _reset (void);
 
 __attribute__((section(".isr_vector"))) void (*const isr_vectors[CORTEX_INTERRUPTS + NVIC_CHANNELS]) (void) = {
-_esram, _reset, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SysTick_Handler
+_esram, _reset, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SysTick_Handler
 };
 
 int main (void)
 {
     uint32_t pin = PIN('C', 13);
-    systick_init(16000000 / 1000);
+    systick_init(72000000 / 1000);
     enable_bank(pin);
     gpio_set_mode(pin, OUTPUT_MODE_50, GPOPP);
     uint32_t timer, period = 500;
@@ -124,7 +125,6 @@ static inline void systick_init(uint32_t ticks) {
     SYSTICK->LOAD = ticks - 1;
     SYSTICK->VAL = 0;
     SYSTICK->CTRL = BITS(0) | BITS(1) | BITS(2);  // Enable systick
-    RCC->APB2ENR |= (uint32_t)BITS(14);                   // Enable SYSCFG
 }
 
 void SysTick_Handler(void) {
@@ -143,4 +143,18 @@ bool timer_expired(uint32_t *t, uint32_t prd, uint32_t now) {
     if (*t > now) return false;                    // Not expired yet, return
     *t = (now - *t) > prd ? now + prd : *t + prd;  // Next expiration time
     return true;                                   // Expired, return true
+}
+
+static inline void clock_setup() {
+    RCC->CR |= (1u << 16);
+    while ((RCC->CR & BITS(17)) == 0){};
+    RCC->CFGR |= BITS(18) | BITS(19) | BITS(20);
+    RCC->CFGR |= BITS(17);
+    RCC->CFGR |= BITS(16);
+    RCC->CFGR &= ~BITS(13);
+    RCC->CR |= BITS(24);
+    while ((RCC->CR & BITS(25)) == 0){};
+    RCC->CFGR &= ~BITS(7);
+    RCC->CFGR |= 2u;
+    while ((RCC->CFGR & (3u << 2)) == 2u){};
 }
