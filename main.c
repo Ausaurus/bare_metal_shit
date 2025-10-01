@@ -48,6 +48,7 @@ _esram, _reset, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SysTick_Handler
 
 int main (void)
 {
+    clock_setup();
     uint32_t pin = PIN('C', 13);
     systick_init(72000000 / 1000);
     enable_bank(pin);
@@ -146,15 +147,19 @@ bool timer_expired(uint32_t *t, uint32_t prd, uint32_t now) {
 }
 
 static inline void clock_setup() {
+    // turn on HSE
     RCC->CR |= (1u << 16);
-    while ((RCC->CR & BITS(17)) == 0){};
-    RCC->CFGR |= BITS(18) | BITS(19) | BITS(20);
-    RCC->CFGR |= BITS(17);
-    RCC->CFGR |= BITS(16);
-    RCC->CFGR &= ~BITS(13);
-    RCC->CR |= BITS(24);
-    while ((RCC->CR & BITS(25)) == 0){};
-    RCC->CFGR &= ~BITS(7);
-    RCC->CFGR |= 2u;
-    while ((RCC->CFGR & (3u << 2)) == 2u){};
+    while ((RCC->CR & BITS(17)) == 0){}; // wait for HSE to be ready
+
+    // configure PLL
+    RCC->CFGR |= BITS(18) | BITS(19) | BITS(20); // configure PLLMUL
+    RCC->CFGR &= ~BITS(17); // configure PLLXTPRE
+    RCC->CFGR |= BITS(16); // configure PLLSRC
+    RCC->CR |= BITS(24); // turn on PLL
+    while ((RCC->CR & BITS(25)) == 0){}; // waiting for PLL to be ready
+
+    RCC->CFGR &= ~BITS(13); // configure APB2 prescaler
+    RCC->CFGR &= ~BITS(7); // configure AHB prescaler
+    RCC->CFGR |= 2u; // select SYSCLK source
+    while ((RCC->CFGR & (3u << 2)) ^ 2u){}; // waiting PLL to be selected
 }
