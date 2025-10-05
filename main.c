@@ -11,6 +11,7 @@
 #define RCC ((rcc *) (0x40021000))
 #define BITS(x) (1ul << x)
 #define SYSTICK ((struct systick *) 0xe000e010)
+#define FLASH_ACR ((volatile uint32_t *) 0x40022000)
 
 enum {INPUT_MODE, OUTPUT_MODE_10, OUTPUT_MODE_2, OUTPUT_MODE_50};
 enum {ANALOG_MODE, FLOATING_INPUT, INPUT_PUPD, RESERVED};
@@ -35,9 +36,11 @@ static inline void enable_bank (uint32_t pin);
 static inline void gpio_set_mode (uint32_t pin, uint32_t mode, uint32_t CNF);
 static inline void gpio_set (uint32_t pin);
 static inline void gpio_reset (uint32_t pin);
+static inline void gpio_toggle (uint32_t pin);
+static inline bool gpio_read (uint32_t pin);
 void SysTick_Handler(void);
 static inline void systick_init(uint32_t ticks);
-void delay(unsigned ms);
+void delay(uint32_t ms);
 bool timer_expired(uint32_t *t, uint32_t prd, uint32_t now);
 static inline void clock_setup();
 __attribute__((noreturn))void _reset (void);
@@ -49,16 +52,18 @@ _esram, _reset, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SysTick_Handler
 int main (void)
 {
     clock_setup();
-    uint32_t pin = PIN('C', 13);
+    uint32_t pinC13 = PIN('C', 13);
+    uint32_t pinA0 = PIN('A', 0);
     systick_init(72000000 / 1000);
-    enable_bank(pin);
-    gpio_set_mode(pin, OUTPUT_MODE_50, GPOPP);
-    uint32_t timer, period = 500;
+    enable_bank(pinC13);
+    enable_bank(pinA0);
+    gpio_set_mode(pinC13, OUTPUT_MODE_50, GPOPP);
+    gpio_set_mode(pinA0, INPUT_MODE, INPUT_PUPD);
+    gpio_set(pinC13);
     for (;;) {
-        if (timer_expired(&timer, period, s_ticks)) {
-            static bool on;       // This block is executed
-            (on) ? gpio_reset(pin) : gpio_set(pin);
-            on = !on;             // Toggle LED state
+        if (gpio_read(pinA0)) {
+            delay(200);
+            gpio_toggle(pinC13);
         }
         // Here we could perform other activities!
     };
@@ -101,6 +106,10 @@ static inline void gpio_set_mode (uint32_t pin, uint32_t mode, uint32_t CNF){
         reg_address->CRL &= ~((uint32_t)(15 << (slot * 4)));
         reg_address->CRL |= (uint32_t)((((CNF << 2) | mode) & 15) << (slot * 4));
     }
+
+    if (CNF == INPUT_PUPD) {
+        reg_address->ODR |= BITS(pin_number);
+    }
 }
 
 static inline void gpio_set (uint32_t pin){
@@ -115,10 +124,39 @@ static inline void gpio_set (uint32_t pin){
 static inline void gpio_reset (uint32_t pin){
     uint32_t pin_number = PINNO(pin);
     uint32_t bank = PINBANK(pin);
-    uint32_t slot = (pin_number & 15) + 16;
+    uint32_t slot = pin_number & 15;
     gpio *reg_address = REGISTERS(bank);
 
-    reg_address->BSRR = BITS(slot);
+    reg_address->BRR = BITS(slot);
+}
+
+static inline void gpio_toggle (uint32_t pin){
+    uint32_t pin_number = PINNO(pin);
+    uint32_t bank = PINBANK(pin);
+    uint32_t slot = (pin_number & 15);
+    gpio *reg_address = REGISTERS(bank);
+
+    if ((reg_address->ODR >> slot) & 1) {
+        reg_address->BRR = BITS(slot);
+    }
+    else {
+        reg_address->BSRR = BITS(slot);
+    }
+}
+
+bool gpio_read (uint32_t pin) {
+    uint32_t pin_number = PINNO(pin);
+    uint32_t bank = PINBANK(pin);
+    uint32_t slot = (pin_number & 15);
+    gpio *reg_address = REGISTERS(bank);
+
+    if ((reg_address->IDR >> slot) & 1u) {
+        return true;
+    }
+
+    else {
+        return false;
+    }
 }
 
 static inline void systick_init(uint32_t ticks) {
@@ -132,9 +170,13 @@ void SysTick_Handler(void) {
     s_ticks++;
 }
 
-void delay(unsigned ms) {            // This function waits "ms" milliseconds
+void delay(uint32_t ms) {            // This function waits "ms" milliseconds
     uint32_t until = s_ticks + ms;      // Time in a future when we need to stop
+    uint32_t timer, period = ms;
     while (s_ticks < until) (void) 0;   // Loop until then
+    while (true) {
+        if (timer_expired(&timer, period, s_ticks)) break;
+    }
 }
 
 // t: expiration time, prd: period, now: current time. Return true if expired
@@ -150,6 +192,8 @@ static inline void clock_setup() {
     // turn on HSE
     RCC->CR |= (1u << 16);
     while ((RCC->CR & BITS(17)) == 0){}; // wait for HSE to be ready
+    //
+    *FLASH_ACR |= BITS(4) | 2u;
 
     // configure PLL
     RCC->CFGR |= BITS(18) | BITS(19) | BITS(20); // configure PLLMUL
@@ -158,8 +202,9 @@ static inline void clock_setup() {
     RCC->CR |= BITS(24); // turn on PLL
     while ((RCC->CR & BITS(25)) == 0){}; // waiting for PLL to be ready
 
-    RCC->CFGR &= ~BITS(13); // configure APB2 prescaler
+    RCC->CFGR &= ~BITS(13); // BITS(10);configure APB2 prescaler
+    RCC->CFGR |= (4u << 8);
     RCC->CFGR &= ~BITS(7); // configure AHB prescaler
     RCC->CFGR |= 2u; // select SYSCLK source
-    while ((RCC->CFGR & (3u << 2)) ^ 2u){}; // waiting PLL to be selected
+    while (((RCC->CFGR >> 2) & 3u) != 2u){}; // waiting PLL to be selected
 }

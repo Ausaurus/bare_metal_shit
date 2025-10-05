@@ -1,46 +1,41 @@
 Archive member included to satisfy reference by file (symbol)
 
 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
-                              /tmp/ccIxPO0N.o (memcpy)
+                              /tmp/ccOiEuyp.o (memcpy)
 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
-                              /tmp/ccIxPO0N.o (memset)
+                              /tmp/ccOiEuyp.o (memset)
 
 Discarded input sections
 
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .group         0x0000000000000000        0xc /tmp/ccIxPO0N.o
- .text          0x0000000000000000        0x0 /tmp/ccIxPO0N.o
- .data          0x0000000000000000        0x0 /tmp/ccIxPO0N.o
- .bss           0x0000000000000000        0x0 /tmp/ccIxPO0N.o
- .text.startup.main
-                0x0000000000000000        0x6 /tmp/ccIxPO0N.o
- .text.delay    0x0000000000000000       0x14 /tmp/ccIxPO0N.o
- .text.timer_expired
-                0x0000000000000000       0x26 /tmp/ccIxPO0N.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
+ .text          0x0000000000000000        0x0 /tmp/ccOiEuyp.o
+ .data          0x0000000000000000        0x0 /tmp/ccOiEuyp.o
+ .bss           0x0000000000000000        0x0 /tmp/ccOiEuyp.o
  .text          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .data          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .bss           0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
@@ -57,14 +52,14 @@ SRAM             0x0000000020000000 0x0000000000005000 xrw
 
 Linker script and memory map
 
-LOAD /tmp/ccIxPO0N.o
+LOAD /tmp/ccOiEuyp.o
 LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
 LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a
                 0x0000000020005000                _esram = (ORIGIN (SRAM) + LENGTH (SRAM))
 
 .isr_vector     0x0000000008000000       0xec
  *(.isr_vector)
- .isr_vector    0x0000000008000000       0xec /tmp/ccIxPO0N.o
+ .isr_vector    0x0000000008000000       0xec /tmp/ccOiEuyp.o
                 0x0000000008000000                isr_vectors
 
 .text           0x00000000080000ec        0x0
@@ -89,43 +84,54 @@ LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-ea
 .text.SysTick_Handler
                 0x00000000080000ec       0x10
  .text.SysTick_Handler
-                0x00000000080000ec       0x10 /tmp/ccIxPO0N.o
+                0x00000000080000ec       0x10 /tmp/ccOiEuyp.o
                 0x00000000080000ec                SysTick_Handler
 
-.text.clock_setup
-                0x00000000080000fc       0x58
- .text.clock_setup
-                0x00000000080000fc       0x58 /tmp/ccIxPO0N.o
+.text.timer_expired
+                0x00000000080000fc       0x26
+ .text.timer_expired
+                0x00000000080000fc       0x26 /tmp/ccOiEuyp.o
+                0x00000000080000fc                timer_expired
 
-.text._reset    0x0000000008000154       0x50
- .text._reset   0x0000000008000154       0x50 /tmp/ccIxPO0N.o
-                0x0000000008000154                _reset
+.text.delay     0x0000000008000124       0x24
+ .text.delay    0x0000000008000124       0x24 /tmp/ccOiEuyp.o
+                0x0000000008000124                delay
 
-.iplt           0x00000000080001a4        0x0
- .iplt          0x00000000080001a4        0x0 /tmp/ccIxPO0N.o
+.text.startup.main
+                0x0000000008000148       0xe8
+ .text.startup.main
+                0x0000000008000148       0xe8 /tmp/ccOiEuyp.o
+                0x0000000008000148                main
 
-.text.memcpy    0x00000000080001a4       0x1c
- .text.memcpy   0x00000000080001a4       0x1c /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
-                0x00000000080001a4                memcpy
+.text._reset    0x0000000008000230       0x50
+ .text._reset   0x0000000008000230       0x50 /tmp/ccOiEuyp.o
+                0x0000000008000230                _reset
 
-.text.memset    0x00000000080001c0       0x10
- .text.memset   0x00000000080001c0       0x10 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
-                0x00000000080001c0                memset
+.iplt           0x0000000008000280        0x0
+ .iplt          0x0000000008000280        0x0 /tmp/ccOiEuyp.o
 
-.rel.dyn        0x00000000080001d0        0x0
- .rel.iplt      0x00000000080001d0        0x0 /tmp/ccIxPO0N.o
+.text.memcpy    0x0000000008000280       0x1c
+ .text.memcpy   0x0000000008000280       0x1c /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000000008000280                memcpy
 
-.data           0x0000000020000000        0x0 load address 0x00000000080001d0
+.text.memset    0x000000000800029c       0x10
+ .text.memset   0x000000000800029c       0x10 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x000000000800029c                memset
+
+.rel.dyn        0x00000000080002ac        0x0
+ .rel.iplt      0x00000000080002ac        0x0 /tmp/ccOiEuyp.o
+
+.data           0x0000000020000000        0x0 load address 0x00000000080002ac
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _edata = .
 
-.igot.plt       0x0000000020000000        0x0 load address 0x00000000080001d0
- .igot.plt      0x0000000020000000        0x0 /tmp/ccIxPO0N.o
+.igot.plt       0x0000000020000000        0x0 load address 0x00000000080002ac
+ .igot.plt      0x0000000020000000        0x0 /tmp/ccOiEuyp.o
 
-.bss            0x0000000020000000        0x0 load address 0x00000000080001d0
+.bss            0x0000000020000000        0x0 load address 0x00000000080002ac
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sbss = .
  *(.bss)
@@ -134,75 +140,75 @@ LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-ea
 OUTPUT(firmware.elf elf32-littlearm)
 LOAD linker stubs
 
-.bss.s_ticks    0x0000000020000000        0x4 load address 0x00000000080001d0
- .bss.s_ticks   0x0000000020000000        0x4 /tmp/ccIxPO0N.o
+.bss.s_ticks    0x0000000020000000        0x4 load address 0x00000000080002ac
+ .bss.s_ticks   0x0000000020000000        0x4 /tmp/ccOiEuyp.o
 
-.debug_info     0x0000000000000000      0x5f3
- .debug_info    0x0000000000000000      0x5f3 /tmp/ccIxPO0N.o
+.debug_info     0x0000000000000000      0x8c3
+ .debug_info    0x0000000000000000      0x8c3 /tmp/ccOiEuyp.o
 
-.debug_abbrev   0x0000000000000000      0x2b3
- .debug_abbrev  0x0000000000000000      0x2b3 /tmp/ccIxPO0N.o
+.debug_abbrev   0x0000000000000000      0x316
+ .debug_abbrev  0x0000000000000000      0x316 /tmp/ccOiEuyp.o
 
-.debug_loc      0x0000000000000000       0x89
- .debug_loc     0x0000000000000000       0x89 /tmp/ccIxPO0N.o
+.debug_loc      0x0000000000000000      0x2c9
+ .debug_loc     0x0000000000000000      0x2c9 /tmp/ccOiEuyp.o
 
-.debug_aranges  0x0000000000000000       0x48
+.debug_aranges  0x0000000000000000       0x40
  .debug_aranges
-                0x0000000000000000       0x48 /tmp/ccIxPO0N.o
+                0x0000000000000000       0x40 /tmp/ccOiEuyp.o
 
-.debug_ranges   0x0000000000000000       0x50
- .debug_ranges  0x0000000000000000       0x50 /tmp/ccIxPO0N.o
+.debug_ranges   0x0000000000000000       0xf0
+ .debug_ranges  0x0000000000000000       0xf0 /tmp/ccOiEuyp.o
 
-.debug_macro    0x0000000000000000     0x18ac
- .debug_macro   0x0000000000000000      0x191 /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000000191      0xa60 /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000000bf1       0x22 /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000000c13       0x8e /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000000ca1       0x51 /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000000cf2      0x103 /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000000df5       0x6a /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000000e5f      0x1df /tmp/ccIxPO0N.o
- .debug_macro   0x000000000000103e       0x22 /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000001060       0x52 /tmp/ccIxPO0N.o
- .debug_macro   0x00000000000010b2       0x18 /tmp/ccIxPO0N.o
- .debug_macro   0x00000000000010ca       0x3c /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000001106       0x34 /tmp/ccIxPO0N.o
- .debug_macro   0x000000000000113a      0x174 /tmp/ccIxPO0N.o
- .debug_macro   0x00000000000012ae      0x341 /tmp/ccIxPO0N.o
- .debug_macro   0x00000000000015ef       0x10 /tmp/ccIxPO0N.o
- .debug_macro   0x00000000000015ff       0x16 /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000001615       0x43 /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000001658       0x34 /tmp/ccIxPO0N.o
- .debug_macro   0x000000000000168c       0x1c /tmp/ccIxPO0N.o
- .debug_macro   0x00000000000016a8       0x52 /tmp/ccIxPO0N.o
- .debug_macro   0x00000000000016fa       0x22 /tmp/ccIxPO0N.o
- .debug_macro   0x000000000000171c       0x10 /tmp/ccIxPO0N.o
- .debug_macro   0x000000000000172c       0x52 /tmp/ccIxPO0N.o
- .debug_macro   0x000000000000177e       0xd5 /tmp/ccIxPO0N.o
- .debug_macro   0x0000000000001853       0x1c /tmp/ccIxPO0N.o
- .debug_macro   0x000000000000186f       0x3d /tmp/ccIxPO0N.o
+.debug_macro    0x0000000000000000     0x18b2
+ .debug_macro   0x0000000000000000      0x197 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000000197      0xa60 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000000bf7       0x22 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000000c19       0x8e /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000000ca7       0x51 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000000cf8      0x103 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000000dfb       0x6a /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000000e65      0x1df /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001044       0x22 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001066       0x52 /tmp/ccOiEuyp.o
+ .debug_macro   0x00000000000010b8       0x18 /tmp/ccOiEuyp.o
+ .debug_macro   0x00000000000010d0       0x3c /tmp/ccOiEuyp.o
+ .debug_macro   0x000000000000110c       0x34 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001140      0x174 /tmp/ccOiEuyp.o
+ .debug_macro   0x00000000000012b4      0x341 /tmp/ccOiEuyp.o
+ .debug_macro   0x00000000000015f5       0x10 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001605       0x16 /tmp/ccOiEuyp.o
+ .debug_macro   0x000000000000161b       0x43 /tmp/ccOiEuyp.o
+ .debug_macro   0x000000000000165e       0x34 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001692       0x1c /tmp/ccOiEuyp.o
+ .debug_macro   0x00000000000016ae       0x52 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001700       0x22 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001722       0x10 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001732       0x52 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001784       0xd5 /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001859       0x1c /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000001875       0x3d /tmp/ccOiEuyp.o
 
-.debug_line     0x0000000000000000      0x524
- .debug_line    0x0000000000000000      0x524 /tmp/ccIxPO0N.o
+.debug_line     0x0000000000000000      0x5e4
+ .debug_line    0x0000000000000000      0x5e4 /tmp/ccOiEuyp.o
 
-.debug_str      0x0000000000000000     0x6141
- .debug_str     0x0000000000000000     0x6141 /tmp/ccIxPO0N.o
-                                       0x635f (size before relaxing)
+.debug_str      0x0000000000000000     0x61bc
+ .debug_str     0x0000000000000000     0x61bc /tmp/ccOiEuyp.o
+                                       0x63d3 (size before relaxing)
 
 .comment        0x0000000000000000       0x49
- .comment       0x0000000000000000       0x49 /tmp/ccIxPO0N.o
+ .comment       0x0000000000000000       0x49 /tmp/ccOiEuyp.o
                                          0x4a (size before relaxing)
 
 .ARM.attributes
                 0x0000000000000000       0x2d
  .ARM.attributes
-                0x0000000000000000       0x2d /tmp/ccIxPO0N.o
+                0x0000000000000000       0x2d /tmp/ccOiEuyp.o
  .ARM.attributes
                 0x000000000000002d       0x2d /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
                 0x000000000000005a       0x2d /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
 
 .debug_frame    0x0000000000000000       0xd0
- .debug_frame   0x0000000000000000       0x88 /tmp/ccIxPO0N.o
+ .debug_frame   0x0000000000000000       0x88 /tmp/ccOiEuyp.o
  .debug_frame   0x0000000000000088       0x28 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .debug_frame   0x00000000000000b0       0x20 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
