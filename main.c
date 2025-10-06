@@ -38,6 +38,7 @@ static inline void gpio_set (uint32_t pin);
 static inline void gpio_reset (uint32_t pin);
 static inline void gpio_toggle (uint32_t pin);
 static inline bool gpio_read (uint32_t pin);
+static inline bool gpio_read_hl (uint32_t pin);
 void SysTick_Handler(void);
 static inline void systick_init(uint32_t ticks);
 void delay(uint32_t ms);
@@ -52,17 +53,36 @@ _esram, _reset, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SysTick_Handler
 int main (void)
 {
     clock_setup();
+    uint32_t pinB3 = PIN('B', 13);
+    uint32_t pinB15 = PIN('B', 15);
     uint32_t pinC13 = PIN('C', 13);
     uint32_t pinA0 = PIN('A', 0);
+    uint32_t pinA6 = PIN('A', 6);
+
     systick_init(72000000 / 1000);
+    enable_bank(pinB3);
     enable_bank(pinC13);
     enable_bank(pinA0);
+
+    gpio_set_mode(pinB3, OUTPUT_MODE_50, GPOPP);
+    gpio_set_mode(pinB15, OUTPUT_MODE_50, GPOPP);
     gpio_set_mode(pinC13, OUTPUT_MODE_50, GPOPP);
     gpio_set_mode(pinA0, INPUT_MODE, INPUT_PUPD);
+    gpio_set_mode(pinA6, INPUT_MODE, INPUT_PUPD);
     gpio_set(pinC13);
+
+    uint32_t timer, prd = 500;
     for (;;) {
-        if (gpio_read(pinA0)) {
-            delay(200);
+
+        if (gpio_read_hl(pinA0)) {
+            gpio_toggle(pinB3);
+        }
+
+        if (gpio_read_hl(pinA6)) {
+            gpio_toggle(pinB15);
+        }
+
+        if (timer_expired(&timer, prd, s_ticks)) {
             gpio_toggle(pinC13);
         }
         // Here we could perform other activities!
@@ -144,19 +164,34 @@ static inline void gpio_toggle (uint32_t pin){
     }
 }
 
-bool gpio_read (uint32_t pin) {
+static inline bool gpio_read (uint32_t pin) {
     uint32_t pin_number = PINNO(pin);
     uint32_t bank = PINBANK(pin);
     uint32_t slot = (pin_number & 15);
     gpio *reg_address = REGISTERS(bank);
 
-    if ((reg_address->IDR >> slot) & 1u) {
+
+    if (!((reg_address->IDR >> slot) & 1u)) {
         return true;
     }
 
     else {
         return false;
     }
+}
+
+static inline bool gpio_read_hl (uint32_t pin) {
+    bool pressed = false;
+
+    if (gpio_read(pin)) {
+        pressed = true;
+        if (pressed && (!gpio_read(pin))) {
+            pressed = false;
+            return true;
+        }
+    }
+
+    return false;
 }
 
 static inline void systick_init(uint32_t ticks) {

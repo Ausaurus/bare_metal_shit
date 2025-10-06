@@ -1,41 +1,42 @@
 Archive member included to satisfy reference by file (symbol)
 
 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
-                              /tmp/ccOiEuyp.o (memcpy)
+                              /tmp/cc4JePZ3.o (memcpy)
 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
-                              /tmp/ccOiEuyp.o (memset)
+                              /tmp/cc4JePZ3.o (memset)
 
 Discarded input sections
 
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .group         0x0000000000000000        0xc /tmp/ccOiEuyp.o
- .text          0x0000000000000000        0x0 /tmp/ccOiEuyp.o
- .data          0x0000000000000000        0x0 /tmp/ccOiEuyp.o
- .bss           0x0000000000000000        0x0 /tmp/ccOiEuyp.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
+ .text          0x0000000000000000        0x0 /tmp/cc4JePZ3.o
+ .data          0x0000000000000000        0x0 /tmp/cc4JePZ3.o
+ .bss           0x0000000000000000        0x0 /tmp/cc4JePZ3.o
+ .text.delay    0x0000000000000000       0x24 /tmp/cc4JePZ3.o
  .text          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .data          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .bss           0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
@@ -52,14 +53,14 @@ SRAM             0x0000000020000000 0x0000000000005000 xrw
 
 Linker script and memory map
 
-LOAD /tmp/ccOiEuyp.o
+LOAD /tmp/cc4JePZ3.o
 LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
 LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a
                 0x0000000020005000                _esram = (ORIGIN (SRAM) + LENGTH (SRAM))
 
 .isr_vector     0x0000000008000000       0xec
  *(.isr_vector)
- .isr_vector    0x0000000008000000       0xec /tmp/ccOiEuyp.o
+ .isr_vector    0x0000000008000000       0xec /tmp/cc4JePZ3.o
                 0x0000000008000000                isr_vectors
 
 .text           0x00000000080000ec        0x0
@@ -84,54 +85,55 @@ LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-ea
 .text.SysTick_Handler
                 0x00000000080000ec       0x10
  .text.SysTick_Handler
-                0x00000000080000ec       0x10 /tmp/ccOiEuyp.o
+                0x00000000080000ec       0x10 /tmp/cc4JePZ3.o
                 0x00000000080000ec                SysTick_Handler
 
-.text.timer_expired
-                0x00000000080000fc       0x26
- .text.timer_expired
-                0x00000000080000fc       0x26 /tmp/ccOiEuyp.o
-                0x00000000080000fc                timer_expired
+.text.gpio_read_hl
+                0x00000000080000fc       0x1c
+ .text.gpio_read_hl
+                0x00000000080000fc       0x1c /tmp/cc4JePZ3.o
 
-.text.delay     0x0000000008000124       0x24
- .text.delay    0x0000000008000124       0x24 /tmp/ccOiEuyp.o
-                0x0000000008000124                delay
+.text.timer_expired
+                0x0000000008000118       0x26
+ .text.timer_expired
+                0x0000000008000118       0x26 /tmp/cc4JePZ3.o
+                0x0000000008000118                timer_expired
 
 .text.startup.main
-                0x0000000008000148       0xe8
+                0x0000000008000140      0x170
  .text.startup.main
-                0x0000000008000148       0xe8 /tmp/ccOiEuyp.o
-                0x0000000008000148                main
+                0x0000000008000140      0x170 /tmp/cc4JePZ3.o
+                0x0000000008000140                main
 
-.text._reset    0x0000000008000230       0x50
- .text._reset   0x0000000008000230       0x50 /tmp/ccOiEuyp.o
-                0x0000000008000230                _reset
+.text._reset    0x00000000080002b0       0x50
+ .text._reset   0x00000000080002b0       0x50 /tmp/cc4JePZ3.o
+                0x00000000080002b0                _reset
 
-.iplt           0x0000000008000280        0x0
- .iplt          0x0000000008000280        0x0 /tmp/ccOiEuyp.o
+.iplt           0x0000000008000300        0x0
+ .iplt          0x0000000008000300        0x0 /tmp/cc4JePZ3.o
 
-.text.memcpy    0x0000000008000280       0x1c
- .text.memcpy   0x0000000008000280       0x1c /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
-                0x0000000008000280                memcpy
+.text.memcpy    0x0000000008000300       0x1c
+ .text.memcpy   0x0000000008000300       0x1c /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000000008000300                memcpy
 
-.text.memset    0x000000000800029c       0x10
- .text.memset   0x000000000800029c       0x10 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
-                0x000000000800029c                memset
+.text.memset    0x000000000800031c       0x10
+ .text.memset   0x000000000800031c       0x10 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x000000000800031c                memset
 
-.rel.dyn        0x00000000080002ac        0x0
- .rel.iplt      0x00000000080002ac        0x0 /tmp/ccOiEuyp.o
+.rel.dyn        0x000000000800032c        0x0
+ .rel.iplt      0x000000000800032c        0x0 /tmp/cc4JePZ3.o
 
-.data           0x0000000020000000        0x0 load address 0x00000000080002ac
+.data           0x0000000020000000        0x0 load address 0x000000000800032c
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _edata = .
 
-.igot.plt       0x0000000020000000        0x0 load address 0x00000000080002ac
- .igot.plt      0x0000000020000000        0x0 /tmp/ccOiEuyp.o
+.igot.plt       0x0000000020000000        0x0 load address 0x000000000800032c
+ .igot.plt      0x0000000020000000        0x0 /tmp/cc4JePZ3.o
 
-.bss            0x0000000020000000        0x0 load address 0x00000000080002ac
+.bss            0x0000000020000000        0x0 load address 0x000000000800032c
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sbss = .
  *(.bss)
@@ -140,75 +142,75 @@ LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-ea
 OUTPUT(firmware.elf elf32-littlearm)
 LOAD linker stubs
 
-.bss.s_ticks    0x0000000020000000        0x4 load address 0x00000000080002ac
- .bss.s_ticks   0x0000000020000000        0x4 /tmp/ccOiEuyp.o
+.bss.s_ticks    0x0000000020000000        0x4 load address 0x000000000800032c
+ .bss.s_ticks   0x0000000020000000        0x4 /tmp/cc4JePZ3.o
 
-.debug_info     0x0000000000000000      0x8c3
- .debug_info    0x0000000000000000      0x8c3 /tmp/ccOiEuyp.o
+.debug_info     0x0000000000000000      0xc92
+ .debug_info    0x0000000000000000      0xc92 /tmp/cc4JePZ3.o
 
-.debug_abbrev   0x0000000000000000      0x316
- .debug_abbrev  0x0000000000000000      0x316 /tmp/ccOiEuyp.o
+.debug_abbrev   0x0000000000000000      0x342
+ .debug_abbrev  0x0000000000000000      0x342 /tmp/cc4JePZ3.o
 
-.debug_loc      0x0000000000000000      0x2c9
- .debug_loc     0x0000000000000000      0x2c9 /tmp/ccOiEuyp.o
+.debug_loc      0x0000000000000000      0x7bd
+ .debug_loc     0x0000000000000000      0x7bd /tmp/cc4JePZ3.o
 
-.debug_aranges  0x0000000000000000       0x40
+.debug_aranges  0x0000000000000000       0x48
  .debug_aranges
-                0x0000000000000000       0x40 /tmp/ccOiEuyp.o
+                0x0000000000000000       0x48 /tmp/cc4JePZ3.o
 
-.debug_ranges   0x0000000000000000       0xf0
- .debug_ranges  0x0000000000000000       0xf0 /tmp/ccOiEuyp.o
+.debug_ranges   0x0000000000000000       0xe0
+ .debug_ranges  0x0000000000000000       0xe0 /tmp/cc4JePZ3.o
 
 .debug_macro    0x0000000000000000     0x18b2
- .debug_macro   0x0000000000000000      0x197 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000000197      0xa60 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000000bf7       0x22 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000000c19       0x8e /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000000ca7       0x51 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000000cf8      0x103 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000000dfb       0x6a /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000000e65      0x1df /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001044       0x22 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001066       0x52 /tmp/ccOiEuyp.o
- .debug_macro   0x00000000000010b8       0x18 /tmp/ccOiEuyp.o
- .debug_macro   0x00000000000010d0       0x3c /tmp/ccOiEuyp.o
- .debug_macro   0x000000000000110c       0x34 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001140      0x174 /tmp/ccOiEuyp.o
- .debug_macro   0x00000000000012b4      0x341 /tmp/ccOiEuyp.o
- .debug_macro   0x00000000000015f5       0x10 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001605       0x16 /tmp/ccOiEuyp.o
- .debug_macro   0x000000000000161b       0x43 /tmp/ccOiEuyp.o
- .debug_macro   0x000000000000165e       0x34 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001692       0x1c /tmp/ccOiEuyp.o
- .debug_macro   0x00000000000016ae       0x52 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001700       0x22 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001722       0x10 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001732       0x52 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001784       0xd5 /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001859       0x1c /tmp/ccOiEuyp.o
- .debug_macro   0x0000000000001875       0x3d /tmp/ccOiEuyp.o
+ .debug_macro   0x0000000000000000      0x197 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000000197      0xa60 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000000bf7       0x22 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000000c19       0x8e /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000000ca7       0x51 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000000cf8      0x103 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000000dfb       0x6a /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000000e65      0x1df /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001044       0x22 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001066       0x52 /tmp/cc4JePZ3.o
+ .debug_macro   0x00000000000010b8       0x18 /tmp/cc4JePZ3.o
+ .debug_macro   0x00000000000010d0       0x3c /tmp/cc4JePZ3.o
+ .debug_macro   0x000000000000110c       0x34 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001140      0x174 /tmp/cc4JePZ3.o
+ .debug_macro   0x00000000000012b4      0x341 /tmp/cc4JePZ3.o
+ .debug_macro   0x00000000000015f5       0x10 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001605       0x16 /tmp/cc4JePZ3.o
+ .debug_macro   0x000000000000161b       0x43 /tmp/cc4JePZ3.o
+ .debug_macro   0x000000000000165e       0x34 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001692       0x1c /tmp/cc4JePZ3.o
+ .debug_macro   0x00000000000016ae       0x52 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001700       0x22 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001722       0x10 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001732       0x52 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001784       0xd5 /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001859       0x1c /tmp/cc4JePZ3.o
+ .debug_macro   0x0000000000001875       0x3d /tmp/cc4JePZ3.o
 
-.debug_line     0x0000000000000000      0x5e4
- .debug_line    0x0000000000000000      0x5e4 /tmp/ccOiEuyp.o
+.debug_line     0x0000000000000000      0x735
+ .debug_line    0x0000000000000000      0x735 /tmp/cc4JePZ3.o
 
-.debug_str      0x0000000000000000     0x61bc
- .debug_str     0x0000000000000000     0x61bc /tmp/ccOiEuyp.o
-                                       0x63d3 (size before relaxing)
+.debug_str      0x0000000000000000     0x61e4
+ .debug_str     0x0000000000000000     0x61e4 /tmp/cc4JePZ3.o
+                                       0x63fb (size before relaxing)
 
 .comment        0x0000000000000000       0x49
- .comment       0x0000000000000000       0x49 /tmp/ccOiEuyp.o
+ .comment       0x0000000000000000       0x49 /tmp/cc4JePZ3.o
                                          0x4a (size before relaxing)
 
 .ARM.attributes
                 0x0000000000000000       0x2d
  .ARM.attributes
-                0x0000000000000000       0x2d /tmp/ccOiEuyp.o
+                0x0000000000000000       0x2d /tmp/cc4JePZ3.o
  .ARM.attributes
                 0x000000000000002d       0x2d /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
                 0x000000000000005a       0x2d /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
 
-.debug_frame    0x0000000000000000       0xd0
- .debug_frame   0x0000000000000000       0x88 /tmp/ccOiEuyp.o
- .debug_frame   0x0000000000000088       0x28 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00000000000000b0       0x20 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+.debug_frame    0x0000000000000000       0xe0
+ .debug_frame   0x0000000000000000       0x98 /tmp/cc4JePZ3.o
+ .debug_frame   0x0000000000000098       0x28 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000000000000c0       0x20 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
