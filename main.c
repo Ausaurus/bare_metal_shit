@@ -12,10 +12,12 @@
 #define BITS(x) (1ul << x)
 #define SYSTICK ((struct systick *) 0xe000e010)
 #define FLASH_ACR ((volatile uint32_t *) 0x40022000)
+#define REFDEBOUNCE 30
 
 enum {INPUT_MODE, OUTPUT_MODE_10, OUTPUT_MODE_2, OUTPUT_MODE_50};
 enum {ANALOG_MODE, FLOATING_INPUT, INPUT_PUPD, RESERVED};
 enum {GPOPP, GPOOD, AFOPP, AFOOD};
+enum {NULLPD, PU};
 
 typedef struct gpio {
    volatile uint32_t CRL, CRH, IDR, ODR, BSRR, BRR, LCKR;
@@ -32,17 +34,17 @@ struct systick {
 extern void _esram (void);
 extern uint32_t _sdata, _edata, _sbss, _ebss, _etext;
 static volatile uint32_t s_ticks; // volatile is important!!
-static inline void enable_bank (uint32_t pin);
-static inline void gpio_set_mode (uint32_t pin, uint32_t mode, uint32_t CNF);
-static inline void gpio_set (uint32_t pin);
-static inline void gpio_reset (uint32_t pin);
-static inline void gpio_toggle (uint32_t pin);
-static inline bool gpio_read (uint32_t pin);
-static inline bool gpio_read_hl (uint32_t pin);
+static inline void enable_bank (uint32_t);
+static inline void gpio_set_mode (uint32_t, uint32_t, uint32_t, uint32_t);
+static inline void gpio_set (uint32_t);
+static inline void gpio_reset (uint32_t);
+static inline void gpio_toggle (uint32_t);
+static inline bool gpio_read ();
+static inline bool gpio_read_hl (uint32_t, uint32_t *);
 void SysTick_Handler(void);
-static inline void systick_init(uint32_t ticks);
+static inline void systick_init(uint32_t);
 void delay(uint32_t ms);
-bool timer_expired(uint32_t *t, uint32_t prd, uint32_t now);
+bool timer_expired(uint32_t *, uint32_t, uint32_t);
 static inline void clock_setup();
 __attribute__((noreturn))void _reset (void);
 
@@ -50,35 +52,41 @@ __attribute__((section(".isr_vector"))) void (*const isr_vectors[CORTEX_INTERRUP
 _esram, _reset, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SysTick_Handler
 };
 
+uint32_t pinB13 = PIN('B', 13);
+uint32_t pinB15 = PIN('B', 15);
+uint32_t pinC13 = PIN('C', 13);
+uint32_t pinA0 = PIN('A', 0);
+uint32_t pinA6 = PIN('A', 6);
+
+u_int8_t statoln1 = 0;
+uint32_t pin_read;
+
+
 int main (void)
 {
     clock_setup();
-    uint32_t pinB3 = PIN('B', 13);
-    uint32_t pinB15 = PIN('B', 15);
-    uint32_t pinC13 = PIN('C', 13);
-    uint32_t pinA0 = PIN('A', 0);
-    uint32_t pinA6 = PIN('A', 6);
 
     systick_init(72000000 / 1000);
-    enable_bank(pinB3);
+    enable_bank(pinB13);
     enable_bank(pinC13);
     enable_bank(pinA0);
 
-    gpio_set_mode(pinB3, OUTPUT_MODE_50, GPOPP);
-    gpio_set_mode(pinB15, OUTPUT_MODE_50, GPOPP);
-    gpio_set_mode(pinC13, OUTPUT_MODE_50, GPOPP);
-    gpio_set_mode(pinA0, INPUT_MODE, INPUT_PUPD);
-    gpio_set_mode(pinA6, INPUT_MODE, INPUT_PUPD);
+    gpio_set_mode(pinB13, OUTPUT_MODE_50, GPOPP, NULLPD);
+    gpio_set_mode(pinB15, OUTPUT_MODE_50, GPOPP, NULLPD);
+    gpio_set_mode(pinC13, OUTPUT_MODE_50, GPOPP, NULLPD);
+    gpio_set_mode(pinA0, INPUT_MODE, INPUT_PUPD, PU);
+    gpio_set_mode(pinA6, INPUT_MODE, INPUT_PUPD, PU);
     gpio_set(pinC13);
 
     uint32_t timer, prd = 500;
+    uint32_t prevA0 = 0, prevA6 = 0;
     for (;;) {
 
-        if (gpio_read_hl(pinA0)) {
-            gpio_toggle(pinB3);
+        if (gpio_read_hl(pinA0, &prevA0)) {
+            gpio_toggle(pinB13);
         }
 
-        if (gpio_read_hl(pinA6)) {
+        if (gpio_read_hl(pinA6, &prevA6)) {
             gpio_toggle(pinB15);
         }
 
@@ -111,7 +119,7 @@ static inline void enable_bank (uint32_t pin){
     reg_address->APB2ENR |= BITS((bank + 2));
 }
 
-static inline void gpio_set_mode (uint32_t pin, uint32_t mode, uint32_t CNF){
+static inline void gpio_set_mode (uint32_t pin, uint32_t mode, uint32_t CNF, uint32_t pupd){
     uint32_t pin_number = PINNO(pin);
     uint32_t bank = PINBANK(pin);
     uint32_t slot = pin_number & 7;
@@ -129,6 +137,12 @@ static inline void gpio_set_mode (uint32_t pin, uint32_t mode, uint32_t CNF){
 
     if (CNF == INPUT_PUPD) {
         reg_address->ODR |= BITS(pin_number);
+        if (pupd) {
+            reg_address->ODR |= BITS(pin_number);
+        }
+        else {
+            reg_address->ODR &= ~BITS(pin_number);
+        }
     }
 }
 
@@ -151,6 +165,10 @@ static inline void gpio_reset (uint32_t pin){
 }
 
 static inline void gpio_toggle (uint32_t pin){
+    static uint32_t last_ran = 0;
+    if (s_ticks - last_ran < 100) {
+        return (void) 0;
+    }
     uint32_t pin_number = PINNO(pin);
     uint32_t bank = PINBANK(pin);
     uint32_t slot = (pin_number & 15);
@@ -162,36 +180,27 @@ static inline void gpio_toggle (uint32_t pin){
     else {
         reg_address->BSRR = BITS(slot);
     }
+    last_ran = s_ticks;
 }
 
-static inline bool gpio_read (uint32_t pin) {
-    uint32_t pin_number = PINNO(pin);
-    uint32_t bank = PINBANK(pin);
+static inline bool gpio_read() {
+    uint32_t pin_number = PINNO(pin_read);
+    uint32_t bank = PINBANK(pin_read);
     uint32_t slot = (pin_number & 15);
     gpio *reg_address = REGISTERS(bank);
 
-
-    if (!((reg_address->IDR >> slot) & 1u)) {
-        return true;
-    }
-
-    else {
-        return false;
-    }
+    return ((reg_address->IDR >> slot) & 1u);
 }
 
-static inline bool gpio_read_hl (uint32_t pin) {
-    bool pressed = false;
+static inline bool gpio_read_hl (uint32_t pin, uint32_t *prev) {
+    pin_read = pin;
+    bool cur = statoln1;
 
-    if (gpio_read(pin)) {
-        pressed = true;
-        if (pressed && (!gpio_read(pin))) {
-            pressed = false;
-            return true;
-        }
-    }
+    bool falling = !cur && *prev;
 
-    return false;
+    *prev = cur;
+
+    return falling;
 }
 
 static inline void systick_init(uint32_t ticks) {
@@ -203,6 +212,24 @@ static inline void systick_init(uint32_t ticks) {
 
 void SysTick_Handler(void) {
     s_ticks++;
+    uint32_t ln1_1 = 0, ln1_0 = 0;
+    if (gpio_read()) {
+        ln1_1++;
+        ln1_0 = 0;
+        if (ln1_1 >= REFDEBOUNCE) {
+            statoln1 = 1;
+            ln1_1 = REFDEBOUNCE + 1;
+        }
+    }
+
+    else {
+        ln1_0++;
+        ln1_1 = 0;
+        if (ln1_0 >= REFDEBOUNCE) {
+            statoln1 = 0;
+            ln1_0 = REFDEBOUNCE + 1;
+        }
+    }
 }
 
 void delay(uint32_t ms) {            // This function waits "ms" milliseconds

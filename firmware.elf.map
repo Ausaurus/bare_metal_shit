@@ -1,42 +1,42 @@
 Archive member included to satisfy reference by file (symbol)
 
 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
-                              /tmp/cc4JePZ3.o (memcpy)
+                              /tmp/ccjMxmsD.o (memcpy)
 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
-                              /tmp/cc4JePZ3.o (memset)
+                              /tmp/ccjMxmsD.o (memset)
 
 Discarded input sections
 
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .group         0x0000000000000000        0xc /tmp/cc4JePZ3.o
- .text          0x0000000000000000        0x0 /tmp/cc4JePZ3.o
- .data          0x0000000000000000        0x0 /tmp/cc4JePZ3.o
- .bss           0x0000000000000000        0x0 /tmp/cc4JePZ3.o
- .text.delay    0x0000000000000000       0x24 /tmp/cc4JePZ3.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .group         0x0000000000000000        0xc /tmp/ccjMxmsD.o
+ .text          0x0000000000000000        0x0 /tmp/ccjMxmsD.o
+ .data          0x0000000000000000        0x0 /tmp/ccjMxmsD.o
+ .bss           0x0000000000000000        0x0 /tmp/ccjMxmsD.o
+ .text.delay    0x0000000000000000       0x24 /tmp/ccjMxmsD.o
  .text          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .data          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .bss           0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
@@ -53,14 +53,14 @@ SRAM             0x0000000020000000 0x0000000000005000 xrw
 
 Linker script and memory map
 
-LOAD /tmp/cc4JePZ3.o
+LOAD /tmp/ccjMxmsD.o
 LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
 LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a
                 0x0000000020005000                _esram = (ORIGIN (SRAM) + LENGTH (SRAM))
 
 .isr_vector     0x0000000008000000       0xec
  *(.isr_vector)
- .isr_vector    0x0000000008000000       0xec /tmp/cc4JePZ3.o
+ .isr_vector    0x0000000008000000       0xec /tmp/ccjMxmsD.o
                 0x0000000008000000                isr_vectors
 
 .text           0x00000000080000ec        0x0
@@ -82,135 +82,178 @@ LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-ea
 .v4_bx          0x00000000080000ec        0x0
  .v4_bx         0x00000000080000ec        0x0 linker stubs
 
-.text.SysTick_Handler
-                0x00000000080000ec       0x10
- .text.SysTick_Handler
-                0x00000000080000ec       0x10 /tmp/cc4JePZ3.o
-                0x00000000080000ec                SysTick_Handler
+.text.enable_bank
+                0x00000000080000ec       0x18
+ .text.enable_bank
+                0x00000000080000ec       0x18 /tmp/ccjMxmsD.o
 
-.text.gpio_read_hl
-                0x00000000080000fc       0x1c
- .text.gpio_read_hl
-                0x00000000080000fc       0x1c /tmp/cc4JePZ3.o
+.text.gpio_set_mode
+                0x0000000008000104       0x66
+ .text.gpio_set_mode
+                0x0000000008000104       0x66 /tmp/ccjMxmsD.o
+
+.text.gpio_toggle
+                0x000000000800016c       0x3c
+ .text.gpio_toggle
+                0x000000000800016c       0x3c /tmp/ccjMxmsD.o
+
+.text.SysTick_Handler
+                0x00000000080001a8       0x20
+ .text.SysTick_Handler
+                0x00000000080001a8       0x20 /tmp/ccjMxmsD.o
+                0x00000000080001a8                SysTick_Handler
 
 .text.timer_expired
-                0x0000000008000118       0x26
+                0x00000000080001c8       0x26
  .text.timer_expired
-                0x0000000008000118       0x26 /tmp/cc4JePZ3.o
-                0x0000000008000118                timer_expired
+                0x00000000080001c8       0x26 /tmp/ccjMxmsD.o
+                0x00000000080001c8                timer_expired
 
 .text.startup.main
-                0x0000000008000140      0x170
+                0x00000000080001f0      0x19c
  .text.startup.main
-                0x0000000008000140      0x170 /tmp/cc4JePZ3.o
-                0x0000000008000140                main
+                0x00000000080001f0      0x19c /tmp/ccjMxmsD.o
+                0x00000000080001f0                main
 
-.text._reset    0x00000000080002b0       0x50
- .text._reset   0x00000000080002b0       0x50 /tmp/cc4JePZ3.o
-                0x00000000080002b0                _reset
+.text._reset    0x000000000800038c       0x50
+ .text._reset   0x000000000800038c       0x50 /tmp/ccjMxmsD.o
+                0x000000000800038c                _reset
 
-.iplt           0x0000000008000300        0x0
- .iplt          0x0000000008000300        0x0 /tmp/cc4JePZ3.o
+.iplt           0x00000000080003dc        0x0
+ .iplt          0x00000000080003dc        0x0 /tmp/ccjMxmsD.o
 
-.text.memcpy    0x0000000008000300       0x1c
- .text.memcpy   0x0000000008000300       0x1c /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
-                0x0000000008000300                memcpy
+.text.memcpy    0x00000000080003dc       0x1c
+ .text.memcpy   0x00000000080003dc       0x1c /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                0x00000000080003dc                memcpy
 
-.text.memset    0x000000000800031c       0x10
- .text.memset   0x000000000800031c       0x10 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
-                0x000000000800031c                memset
+.text.memset    0x00000000080003f8       0x10
+ .text.memset   0x00000000080003f8       0x10 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x00000000080003f8                memset
 
-.rel.dyn        0x000000000800032c        0x0
- .rel.iplt      0x000000000800032c        0x0 /tmp/cc4JePZ3.o
+.rel.dyn        0x0000000008000408        0x0
+ .rel.iplt      0x0000000008000408        0x0 /tmp/ccjMxmsD.o
 
-.data           0x0000000020000000        0x0 load address 0x000000000800032c
+.data           0x0000000020000000        0x0 load address 0x0000000008000408
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _edata = .
 
-.igot.plt       0x0000000020000000        0x0 load address 0x000000000800032c
- .igot.plt      0x0000000020000000        0x0 /tmp/cc4JePZ3.o
+.data.pinA6     0x0000000020000000        0x4 load address 0x0000000008000408
+ .data.pinA6    0x0000000020000000        0x4 /tmp/ccjMxmsD.o
+                0x0000000020000000                pinA6
 
-.bss            0x0000000020000000        0x0 load address 0x000000000800032c
-                0x0000000020000000                . = ALIGN (0x4)
-                0x0000000020000000                _sbss = .
+.data.pinB13    0x0000000020000004        0x4 load address 0x000000000800040c
+ .data.pinB13   0x0000000020000004        0x4 /tmp/ccjMxmsD.o
+                0x0000000020000004                pinB13
+
+.data.pinB15    0x0000000020000008        0x4 load address 0x0000000008000410
+ .data.pinB15   0x0000000020000008        0x4 /tmp/ccjMxmsD.o
+                0x0000000020000008                pinB15
+
+.data.pinC13    0x000000002000000c        0x4 load address 0x0000000008000414
+ .data.pinC13   0x000000002000000c        0x4 /tmp/ccjMxmsD.o
+                0x000000002000000c                pinC13
+
+.igot.plt       0x0000000020000010        0x0 load address 0x0000000008000418
+ .igot.plt      0x0000000020000010        0x0 /tmp/ccjMxmsD.o
+
+.bss            0x0000000020000010        0x0 load address 0x0000000008000418
+                0x0000000020000010                . = ALIGN (0x4)
+                0x0000000020000010                _sbss = .
  *(.bss)
-                0x0000000020000000                . = ALIGN (0x4)
-                0x0000000020000000                _ebss = .
+                0x0000000020000010                . = ALIGN (0x4)
+                0x0000000020000010                _ebss = .
 OUTPUT(firmware.elf elf32-littlearm)
 LOAD linker stubs
 
-.bss.s_ticks    0x0000000020000000        0x4 load address 0x000000000800032c
- .bss.s_ticks   0x0000000020000000        0x4 /tmp/cc4JePZ3.o
+.bss.last_ran.0
+                0x0000000020000010        0x4 load address 0x0000000008000418
+ .bss.last_ran.0
+                0x0000000020000010        0x4 /tmp/ccjMxmsD.o
 
-.debug_info     0x0000000000000000      0xc92
- .debug_info    0x0000000000000000      0xc92 /tmp/cc4JePZ3.o
+.bss.pinA0      0x0000000020000014        0x4 load address 0x0000000008000418
+ .bss.pinA0     0x0000000020000014        0x4 /tmp/ccjMxmsD.o
+                0x0000000020000014                pinA0
 
-.debug_abbrev   0x0000000000000000      0x342
- .debug_abbrev  0x0000000000000000      0x342 /tmp/cc4JePZ3.o
+.bss.pin_read   0x0000000020000018        0x4 load address 0x0000000008000418
+ .bss.pin_read  0x0000000020000018        0x4 /tmp/ccjMxmsD.o
+                0x0000000020000018                pin_read
 
-.debug_loc      0x0000000000000000      0x7bd
- .debug_loc     0x0000000000000000      0x7bd /tmp/cc4JePZ3.o
+.bss.s_ticks    0x000000002000001c        0x4 load address 0x0000000008000418
+ .bss.s_ticks   0x000000002000001c        0x4 /tmp/ccjMxmsD.o
 
-.debug_aranges  0x0000000000000000       0x48
+.bss.statoln1   0x0000000020000020        0x1 load address 0x0000000008000418
+ .bss.statoln1  0x0000000020000020        0x1 /tmp/ccjMxmsD.o
+                0x0000000020000020                statoln1
+
+.debug_info     0x0000000000000000      0xb09
+ .debug_info    0x0000000000000000      0xb09 /tmp/ccjMxmsD.o
+
+.debug_abbrev   0x0000000000000000      0x358
+ .debug_abbrev  0x0000000000000000      0x358 /tmp/ccjMxmsD.o
+
+.debug_loc      0x0000000000000000      0x7b1
+ .debug_loc     0x0000000000000000      0x7b1 /tmp/ccjMxmsD.o
+
+.debug_aranges  0x0000000000000000       0x58
  .debug_aranges
-                0x0000000000000000       0x48 /tmp/cc4JePZ3.o
+                0x0000000000000000       0x58 /tmp/ccjMxmsD.o
 
-.debug_ranges   0x0000000000000000       0xe0
- .debug_ranges  0x0000000000000000       0xe0 /tmp/cc4JePZ3.o
+.debug_ranges   0x0000000000000000      0x118
+ .debug_ranges  0x0000000000000000      0x118 /tmp/ccjMxmsD.o
 
-.debug_macro    0x0000000000000000     0x18b2
- .debug_macro   0x0000000000000000      0x197 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000000197      0xa60 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000000bf7       0x22 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000000c19       0x8e /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000000ca7       0x51 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000000cf8      0x103 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000000dfb       0x6a /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000000e65      0x1df /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001044       0x22 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001066       0x52 /tmp/cc4JePZ3.o
- .debug_macro   0x00000000000010b8       0x18 /tmp/cc4JePZ3.o
- .debug_macro   0x00000000000010d0       0x3c /tmp/cc4JePZ3.o
- .debug_macro   0x000000000000110c       0x34 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001140      0x174 /tmp/cc4JePZ3.o
- .debug_macro   0x00000000000012b4      0x341 /tmp/cc4JePZ3.o
- .debug_macro   0x00000000000015f5       0x10 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001605       0x16 /tmp/cc4JePZ3.o
- .debug_macro   0x000000000000161b       0x43 /tmp/cc4JePZ3.o
- .debug_macro   0x000000000000165e       0x34 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001692       0x1c /tmp/cc4JePZ3.o
- .debug_macro   0x00000000000016ae       0x52 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001700       0x22 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001722       0x10 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001732       0x52 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001784       0xd5 /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001859       0x1c /tmp/cc4JePZ3.o
- .debug_macro   0x0000000000001875       0x3d /tmp/cc4JePZ3.o
+.debug_macro    0x0000000000000000     0x18b8
+ .debug_macro   0x0000000000000000      0x19d /tmp/ccjMxmsD.o
+ .debug_macro   0x000000000000019d      0xa60 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000000bfd       0x22 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000000c1f       0x8e /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000000cad       0x51 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000000cfe      0x103 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000000e01       0x6a /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000000e6b      0x1df /tmp/ccjMxmsD.o
+ .debug_macro   0x000000000000104a       0x22 /tmp/ccjMxmsD.o
+ .debug_macro   0x000000000000106c       0x52 /tmp/ccjMxmsD.o
+ .debug_macro   0x00000000000010be       0x18 /tmp/ccjMxmsD.o
+ .debug_macro   0x00000000000010d6       0x3c /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000001112       0x34 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000001146      0x174 /tmp/ccjMxmsD.o
+ .debug_macro   0x00000000000012ba      0x341 /tmp/ccjMxmsD.o
+ .debug_macro   0x00000000000015fb       0x10 /tmp/ccjMxmsD.o
+ .debug_macro   0x000000000000160b       0x16 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000001621       0x43 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000001664       0x34 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000001698       0x1c /tmp/ccjMxmsD.o
+ .debug_macro   0x00000000000016b4       0x52 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000001706       0x22 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000001728       0x10 /tmp/ccjMxmsD.o
+ .debug_macro   0x0000000000001738       0x52 /tmp/ccjMxmsD.o
+ .debug_macro   0x000000000000178a       0xd5 /tmp/ccjMxmsD.o
+ .debug_macro   0x000000000000185f       0x1c /tmp/ccjMxmsD.o
+ .debug_macro   0x000000000000187b       0x3d /tmp/ccjMxmsD.o
 
-.debug_line     0x0000000000000000      0x735
- .debug_line    0x0000000000000000      0x735 /tmp/cc4JePZ3.o
+.debug_line     0x0000000000000000      0x782
+ .debug_line    0x0000000000000000      0x782 /tmp/ccjMxmsD.o
 
-.debug_str      0x0000000000000000     0x61e4
- .debug_str     0x0000000000000000     0x61e4 /tmp/cc4JePZ3.o
-                                       0x63fb (size before relaxing)
+.debug_str      0x0000000000000000     0x624d
+ .debug_str     0x0000000000000000     0x624d /tmp/ccjMxmsD.o
+                                       0x6464 (size before relaxing)
 
 .comment        0x0000000000000000       0x49
- .comment       0x0000000000000000       0x49 /tmp/cc4JePZ3.o
+ .comment       0x0000000000000000       0x49 /tmp/ccjMxmsD.o
                                          0x4a (size before relaxing)
 
 .ARM.attributes
                 0x0000000000000000       0x2d
  .ARM.attributes
-                0x0000000000000000       0x2d /tmp/cc4JePZ3.o
+                0x0000000000000000       0x2d /tmp/ccjMxmsD.o
  .ARM.attributes
                 0x000000000000002d       0x2d /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
                 0x000000000000005a       0x2d /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
 
-.debug_frame    0x0000000000000000       0xe0
- .debug_frame   0x0000000000000000       0x98 /tmp/cc4JePZ3.o
- .debug_frame   0x0000000000000098       0x28 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00000000000000c0       0x20 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+.debug_frame    0x0000000000000000      0x124
+ .debug_frame   0x0000000000000000       0xdc /tmp/ccjMxmsD.o
+ .debug_frame   0x00000000000000dc       0x28 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000104       0x20 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
