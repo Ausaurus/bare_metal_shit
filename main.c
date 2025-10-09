@@ -31,6 +31,11 @@ struct systick {
   volatile uint32_t CTRL, LOAD, VAL, CALIB;
 };
 
+typedef struct {
+    uint16_t c0, c1;
+    volatile uint8_t stable;
+} Debounce;
+
 extern void _esram (void);
 extern uint32_t _sdata, _edata, _sbss, _ebss, _etext;
 static volatile uint32_t s_ticks; // volatile is important!!
@@ -39,8 +44,9 @@ static inline void gpio_set_mode (uint32_t, uint32_t, uint32_t, uint32_t);
 static inline void gpio_set (uint32_t);
 static inline void gpio_reset (uint32_t);
 static inline void gpio_toggle (uint32_t);
-static inline bool gpio_read ();
-static inline bool gpio_read_hl (uint32_t, uint32_t *);
+static inline uint8_t gpio_read (uint32_t);
+static inline void debounce_check (volatile Debounce *, uint8_t);
+// static inline bool gpio_read_hl (uint32_t, uint32_t *);
 void SysTick_Handler(void);
 static inline void systick_init(uint32_t);
 void delay(uint32_t ms);
@@ -58,9 +64,8 @@ uint32_t pinC13 = PIN('C', 13);
 uint32_t pinA0 = PIN('A', 0);
 uint32_t pinA6 = PIN('A', 6);
 
-u_int8_t statoln1 = 0;
-uint32_t pin_read;
-
+volatile Debounce dbA0 = {0, 0, 0};
+volatile Debounce dbA6 = {0, 0, 0};
 
 int main (void)
 {
@@ -79,14 +84,18 @@ int main (void)
     gpio_set(pinC13);
 
     uint32_t timer, prd = 500;
-    uint32_t prevA0 = 0, prevA6 = 0;
+    volatile uint32_t prevA0 = 0, prevA6 = 0;
+
     for (;;) {
 
-        if (gpio_read_hl(pinA0, &prevA0)) {
+        volatile uint8_t curA0 = dbA0.stable;
+        volatile uint8_t curA6 = dbA6.stable;
+
+        if (curA0 && !prevA0) {
             gpio_toggle(pinB13);
         }
 
-        if (gpio_read_hl(pinA6, &prevA6)) {
+        if (curA6 && !prevA6) {
             gpio_toggle(pinB15);
         }
 
@@ -94,6 +103,8 @@ int main (void)
             gpio_toggle(pinC13);
         }
         // Here we could perform other activities!
+        prevA0 = curA0;
+        prevA6 = curA6;
     };
     return 0;
 }
@@ -136,7 +147,6 @@ static inline void gpio_set_mode (uint32_t pin, uint32_t mode, uint32_t CNF, uin
     }
 
     if (CNF == INPUT_PUPD) {
-        reg_address->ODR |= BITS(pin_number);
         if (pupd) {
             reg_address->ODR |= BITS(pin_number);
         }
@@ -183,25 +193,38 @@ static inline void gpio_toggle (uint32_t pin){
     last_ran = s_ticks;
 }
 
-static inline bool gpio_read() {
-    uint32_t pin_number = PINNO(pin_read);
-    uint32_t bank = PINBANK(pin_read);
+static inline uint8_t gpio_read(uint32_t pin) {
+    uint32_t pin_number = PINNO(pin);
+    uint32_t bank = PINBANK(pin);
     uint32_t slot = (pin_number & 15);
     gpio *reg_address = REGISTERS(bank);
 
     return ((reg_address->IDR >> slot) & 1u);
 }
 
-static inline bool gpio_read_hl (uint32_t pin, uint32_t *prev) {
-    pin_read = pin;
-    bool cur = statoln1;
+static inline void debounce_check (volatile Debounce *d, uint8_t lvl) {
+    if (lvl) {
+        d->c1++;
+        d->c0 = 0;
+        if (d->c1 >= REFDEBOUNCE) d->stable = 1;
+    }
 
-    bool falling = !cur && *prev;
-
-    *prev = cur;
-
-    return falling;
+    else {
+        d->c0++;
+        d->c1 = 0;
+        if (d->c0 >= REFDEBOUNCE) d->stable = 0;
+    }
 }
+
+// static inline bool gpio_read_hl (uint32_t pin, uint32_t *prev) {
+//     bool cur = statoln1;
+//
+//     bool falling = !cur && *prev;
+//
+//     *prev = cur;
+//
+//     return falling;
+// }
 
 static inline void systick_init(uint32_t ticks) {
     if ((ticks - 1) > 0xffffff) return;  // Systick timer is 24 bit
@@ -212,24 +235,8 @@ static inline void systick_init(uint32_t ticks) {
 
 void SysTick_Handler(void) {
     s_ticks++;
-    uint32_t ln1_1 = 0, ln1_0 = 0;
-    if (gpio_read()) {
-        ln1_1++;
-        ln1_0 = 0;
-        if (ln1_1 >= REFDEBOUNCE) {
-            statoln1 = 1;
-            ln1_1 = REFDEBOUNCE + 1;
-        }
-    }
-
-    else {
-        ln1_0++;
-        ln1_1 = 0;
-        if (ln1_0 >= REFDEBOUNCE) {
-            statoln1 = 0;
-            ln1_0 = REFDEBOUNCE + 1;
-        }
-    }
+    debounce_check(&dbA0, gpio_read(pinA0));
+    debounce_check(&dbA6, gpio_read(pinA6));
 }
 
 void delay(uint32_t ms) {            // This function waits "ms" milliseconds
