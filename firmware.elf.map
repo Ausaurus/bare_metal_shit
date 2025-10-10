@@ -1,42 +1,42 @@
 Archive member included to satisfy reference by file (symbol)
 
 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
-                              /tmp/cc3aunl4.o (memcpy)
+                              /tmp/cc49U3wc.o (memcpy)
 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
-                              /tmp/cc3aunl4.o (memset)
+                              /tmp/cc49U3wc.o (memset)
 
 Discarded input sections
 
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .group         0x0000000000000000        0xc /tmp/cc3aunl4.o
- .text          0x0000000000000000        0x0 /tmp/cc3aunl4.o
- .data          0x0000000000000000        0x0 /tmp/cc3aunl4.o
- .bss           0x0000000000000000        0x0 /tmp/cc3aunl4.o
- .text.delay    0x0000000000000000       0x24 /tmp/cc3aunl4.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .group         0x0000000000000000        0xc /tmp/cc49U3wc.o
+ .text          0x0000000000000000        0x0 /tmp/cc49U3wc.o
+ .data          0x0000000000000000        0x0 /tmp/cc49U3wc.o
+ .bss           0x0000000000000000        0x0 /tmp/cc49U3wc.o
+ .text.delay    0x0000000000000000       0x24 /tmp/cc49U3wc.o
  .text          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .data          0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .bss           0x0000000000000000        0x0 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
@@ -53,14 +53,14 @@ SRAM             0x0000000020000000 0x0000000000005000 xrw
 
 Linker script and memory map
 
-LOAD /tmp/cc3aunl4.o
+LOAD /tmp/cc49U3wc.o
 LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
 LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a
                 0x0000000020005000                _esram = (ORIGIN (SRAM) + LENGTH (SRAM))
 
 .isr_vector     0x0000000008000000       0xec
  *(.isr_vector)
- .isr_vector    0x0000000008000000       0xec /tmp/cc3aunl4.o
+ .isr_vector    0x0000000008000000       0xec /tmp/cc49U3wc.o
                 0x0000000008000000                isr_vectors
 
 .text           0x00000000080000ec        0x0
@@ -85,180 +85,180 @@ LOAD /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-ea
 .text.enable_bank
                 0x00000000080000ec       0x18
  .text.enable_bank
-                0x00000000080000ec       0x18 /tmp/cc3aunl4.o
+                0x00000000080000ec       0x18 /tmp/cc49U3wc.o
 
 .text.gpio_set_mode
-                0x0000000008000104       0x62
+                0x0000000008000104       0x66
  .text.gpio_set_mode
-                0x0000000008000104       0x62 /tmp/cc3aunl4.o
-
-.text.gpio_toggle
-                0x0000000008000168       0x3c
- .text.gpio_toggle
-                0x0000000008000168       0x3c /tmp/cc3aunl4.o
+                0x0000000008000104       0x66 /tmp/cc49U3wc.o
 
 .text.debounce_check
-                0x00000000080001a4       0x32
+                0x000000000800016a       0x2a
  .text.debounce_check
-                0x00000000080001a4       0x32 /tmp/cc3aunl4.o
+                0x000000000800016a       0x2a /tmp/cc49U3wc.o
+
+.text.gpio_toggle.isra.0
+                0x0000000008000194       0x22
+ .text.gpio_toggle.isra.0
+                0x0000000008000194       0x22 /tmp/cc49U3wc.o
+
+.text.EXTI0_IRQHandler
+                0x00000000080001b8       0x28
+ .text.EXTI0_IRQHandler
+                0x00000000080001b8       0x28 /tmp/cc49U3wc.o
 
 .text.SysTick_Handler
-                0x00000000080001d8       0x68
+                0x00000000080001e0       0x6c
  .text.SysTick_Handler
-                0x00000000080001d8       0x68 /tmp/cc3aunl4.o
-                0x00000000080001d8                SysTick_Handler
+                0x00000000080001e0       0x6c /tmp/cc49U3wc.o
+                0x00000000080001e0                SysTick_Handler
 
 .text.timer_expired
-                0x0000000008000240       0x26
+                0x000000000800024c       0x26
  .text.timer_expired
-                0x0000000008000240       0x26 /tmp/cc3aunl4.o
-                0x0000000008000240                timer_expired
+                0x000000000800024c       0x26 /tmp/cc49U3wc.o
+                0x000000000800024c                timer_expired
 
 .text.startup.main
-                0x0000000008000268      0x18c
+                0x0000000008000274      0x1a4
  .text.startup.main
-                0x0000000008000268      0x18c /tmp/cc3aunl4.o
-                0x0000000008000268                main
+                0x0000000008000274      0x1a4 /tmp/cc49U3wc.o
+                0x0000000008000274                main
 
-.text._reset    0x00000000080003f4       0x50
- .text._reset   0x00000000080003f4       0x50 /tmp/cc3aunl4.o
-                0x00000000080003f4                _reset
+.text._reset    0x0000000008000418       0x50
+ .text._reset   0x0000000008000418       0x50 /tmp/cc49U3wc.o
+                0x0000000008000418                _reset
 
-.iplt           0x0000000008000444        0x0
- .iplt          0x0000000008000444        0x0 /tmp/cc3aunl4.o
+.iplt           0x0000000008000468        0x0
+ .iplt          0x0000000008000468        0x0 /tmp/cc49U3wc.o
 
-.text.memcpy    0x0000000008000444       0x1c
- .text.memcpy   0x0000000008000444       0x1c /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
-                0x0000000008000444                memcpy
+.text.memcpy    0x0000000008000468       0x1c
+ .text.memcpy   0x0000000008000468       0x1c /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000000008000468                memcpy
 
-.text.memset    0x0000000008000460       0x10
- .text.memset   0x0000000008000460       0x10 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
-                0x0000000008000460                memset
+.text.memset    0x0000000008000484       0x10
+ .text.memset   0x0000000008000484       0x10 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x0000000008000484                memset
 
-.rel.dyn        0x0000000008000470        0x0
- .rel.iplt      0x0000000008000470        0x0 /tmp/cc3aunl4.o
+.rel.dyn        0x0000000008000494        0x0
+ .rel.iplt      0x0000000008000494        0x0 /tmp/cc49U3wc.o
 
-.data           0x0000000020000000        0x0 load address 0x0000000008000470
+.data           0x0000000020000000        0x0 load address 0x0000000008000494
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _edata = .
 
-.data.pinA6     0x0000000020000000        0x4 load address 0x0000000008000470
- .data.pinA6    0x0000000020000000        0x4 /tmp/cc3aunl4.o
-                0x0000000020000000                pinA6
+.igot.plt       0x0000000020000000        0x0 load address 0x0000000008000494
+ .igot.plt      0x0000000020000000        0x0 /tmp/cc49U3wc.o
 
-.data.pinB13    0x0000000020000004        0x4 load address 0x0000000008000474
- .data.pinB13   0x0000000020000004        0x4 /tmp/cc3aunl4.o
-                0x0000000020000004                pinB13
-
-.data.pinB15    0x0000000020000008        0x4 load address 0x0000000008000478
- .data.pinB15   0x0000000020000008        0x4 /tmp/cc3aunl4.o
-                0x0000000020000008                pinB15
-
-.data.pinC13    0x000000002000000c        0x4 load address 0x000000000800047c
- .data.pinC13   0x000000002000000c        0x4 /tmp/cc3aunl4.o
-                0x000000002000000c                pinC13
-
-.igot.plt       0x0000000020000010        0x0 load address 0x0000000008000480
- .igot.plt      0x0000000020000010        0x0 /tmp/cc3aunl4.o
-
-.bss            0x0000000020000010        0x0 load address 0x0000000008000480
-                0x0000000020000010                . = ALIGN (0x4)
-                0x0000000020000010                _sbss = .
+.bss            0x0000000020000000        0x0 load address 0x0000000008000494
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sbss = .
  *(.bss)
-                0x0000000020000010                . = ALIGN (0x4)
-                0x0000000020000010                _ebss = .
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _ebss = .
 OUTPUT(firmware.elf elf32-littlearm)
 LOAD linker stubs
 
-.bss.dbA0       0x0000000020000010        0x6 load address 0x0000000008000480
- .bss.dbA0      0x0000000020000010        0x6 /tmp/cc3aunl4.o
-                0x0000000020000010                dbA0
+.bss._pinA0     0x0000000020000000        0x4 load address 0x0000000008000494
+ .bss._pinA0    0x0000000020000000        0x4 /tmp/cc49U3wc.o
+                0x0000000020000000                _pinA0
 
-.bss.dbA6       0x0000000020000016        0x6 load address 0x0000000008000480
- .bss.dbA6      0x0000000020000016        0x6 /tmp/cc3aunl4.o
-                0x0000000020000016                dbA6
+.bss._pinA6     0x0000000020000004        0x4 load address 0x0000000008000494
+ .bss._pinA6    0x0000000020000004        0x4 /tmp/cc49U3wc.o
+                0x0000000020000004                _pinA6
 
-.bss.last_ran.0
-                0x000000002000001c        0x4 load address 0x0000000008000480
- .bss.last_ran.0
-                0x000000002000001c        0x4 /tmp/cc3aunl4.o
+.bss._pinB13    0x0000000020000008        0x4 load address 0x0000000008000494
+ .bss._pinB13   0x0000000020000008        0x4 /tmp/cc49U3wc.o
+                0x0000000020000008                _pinB13
 
-.bss.pinA0      0x0000000020000020        0x4 load address 0x0000000008000480
- .bss.pinA0     0x0000000020000020        0x4 /tmp/cc3aunl4.o
-                0x0000000020000020                pinA0
+.bss._pinB15    0x000000002000000c        0x4 load address 0x0000000008000494
+ .bss._pinB15   0x000000002000000c        0x4 /tmp/cc49U3wc.o
+                0x000000002000000c                _pinB15
 
-.bss.s_ticks    0x0000000020000024        0x4 load address 0x0000000008000480
- .bss.s_ticks   0x0000000020000024        0x4 /tmp/cc3aunl4.o
+.bss._pinC13    0x0000000020000010        0x4 load address 0x0000000008000494
+ .bss._pinC13   0x0000000020000010        0x4 /tmp/cc49U3wc.o
+                0x0000000020000010                _pinC13
 
-.debug_info     0x0000000000000000      0xb9b
- .debug_info    0x0000000000000000      0xb9b /tmp/cc3aunl4.o
+.bss.dbA0       0x0000000020000014        0xc load address 0x0000000008000494
+ .bss.dbA0      0x0000000020000014        0xc /tmp/cc49U3wc.o
+                0x0000000020000014                dbA0
 
-.debug_abbrev   0x0000000000000000      0x37a
- .debug_abbrev  0x0000000000000000      0x37a /tmp/cc3aunl4.o
+.bss.dbA6       0x0000000020000020        0xc load address 0x0000000008000494
+ .bss.dbA6      0x0000000020000020        0xc /tmp/cc49U3wc.o
+                0x0000000020000020                dbA6
 
-.debug_loc      0x0000000000000000      0x72b
- .debug_loc     0x0000000000000000      0x72b /tmp/cc3aunl4.o
+.bss.s_ticks    0x000000002000002c        0x4 load address 0x0000000008000494
+ .bss.s_ticks   0x000000002000002c        0x4 /tmp/cc49U3wc.o
 
-.debug_aranges  0x0000000000000000       0x60
+.debug_info     0x0000000000000000      0xca8
+ .debug_info    0x0000000000000000      0xca8 /tmp/cc49U3wc.o
+
+.debug_abbrev   0x0000000000000000      0x430
+ .debug_abbrev  0x0000000000000000      0x430 /tmp/cc49U3wc.o
+
+.debug_loc      0x0000000000000000      0x7d0
+ .debug_loc     0x0000000000000000      0x7d0 /tmp/cc49U3wc.o
+
+.debug_aranges  0x0000000000000000       0x68
  .debug_aranges
-                0x0000000000000000       0x60 /tmp/cc3aunl4.o
+                0x0000000000000000       0x68 /tmp/cc49U3wc.o
 
-.debug_ranges   0x0000000000000000       0xf0
- .debug_ranges  0x0000000000000000       0xf0 /tmp/cc3aunl4.o
+.debug_ranges   0x0000000000000000       0xd0
+ .debug_ranges  0x0000000000000000       0xd0 /tmp/cc49U3wc.o
 
-.debug_macro    0x0000000000000000     0x18b8
- .debug_macro   0x0000000000000000      0x19d /tmp/cc3aunl4.o
- .debug_macro   0x000000000000019d      0xa60 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000000bfd       0x22 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000000c1f       0x8e /tmp/cc3aunl4.o
- .debug_macro   0x0000000000000cad       0x51 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000000cfe      0x103 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000000e01       0x6a /tmp/cc3aunl4.o
- .debug_macro   0x0000000000000e6b      0x1df /tmp/cc3aunl4.o
- .debug_macro   0x000000000000104a       0x22 /tmp/cc3aunl4.o
- .debug_macro   0x000000000000106c       0x52 /tmp/cc3aunl4.o
- .debug_macro   0x00000000000010be       0x18 /tmp/cc3aunl4.o
- .debug_macro   0x00000000000010d6       0x3c /tmp/cc3aunl4.o
- .debug_macro   0x0000000000001112       0x34 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000001146      0x174 /tmp/cc3aunl4.o
- .debug_macro   0x00000000000012ba      0x341 /tmp/cc3aunl4.o
- .debug_macro   0x00000000000015fb       0x10 /tmp/cc3aunl4.o
- .debug_macro   0x000000000000160b       0x16 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000001621       0x43 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000001664       0x34 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000001698       0x1c /tmp/cc3aunl4.o
- .debug_macro   0x00000000000016b4       0x52 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000001706       0x22 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000001728       0x10 /tmp/cc3aunl4.o
- .debug_macro   0x0000000000001738       0x52 /tmp/cc3aunl4.o
- .debug_macro   0x000000000000178a       0xd5 /tmp/cc3aunl4.o
- .debug_macro   0x000000000000185f       0x1c /tmp/cc3aunl4.o
- .debug_macro   0x000000000000187b       0x3d /tmp/cc3aunl4.o
+.debug_macro    0x0000000000000000     0x18ca
+ .debug_macro   0x0000000000000000      0x1af /tmp/cc49U3wc.o
+ .debug_macro   0x00000000000001af      0xa60 /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000000c0f       0x22 /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000000c31       0x8e /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000000cbf       0x51 /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000000d10      0x103 /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000000e13       0x6a /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000000e7d      0x1df /tmp/cc49U3wc.o
+ .debug_macro   0x000000000000105c       0x22 /tmp/cc49U3wc.o
+ .debug_macro   0x000000000000107e       0x52 /tmp/cc49U3wc.o
+ .debug_macro   0x00000000000010d0       0x18 /tmp/cc49U3wc.o
+ .debug_macro   0x00000000000010e8       0x3c /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000001124       0x34 /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000001158      0x174 /tmp/cc49U3wc.o
+ .debug_macro   0x00000000000012cc      0x341 /tmp/cc49U3wc.o
+ .debug_macro   0x000000000000160d       0x10 /tmp/cc49U3wc.o
+ .debug_macro   0x000000000000161d       0x16 /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000001633       0x43 /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000001676       0x34 /tmp/cc49U3wc.o
+ .debug_macro   0x00000000000016aa       0x1c /tmp/cc49U3wc.o
+ .debug_macro   0x00000000000016c6       0x52 /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000001718       0x22 /tmp/cc49U3wc.o
+ .debug_macro   0x000000000000173a       0x10 /tmp/cc49U3wc.o
+ .debug_macro   0x000000000000174a       0x52 /tmp/cc49U3wc.o
+ .debug_macro   0x000000000000179c       0xd5 /tmp/cc49U3wc.o
+ .debug_macro   0x0000000000001871       0x1c /tmp/cc49U3wc.o
+ .debug_macro   0x000000000000188d       0x3d /tmp/cc49U3wc.o
 
-.debug_line     0x0000000000000000      0x801
- .debug_line    0x0000000000000000      0x801 /tmp/cc3aunl4.o
+.debug_line     0x0000000000000000      0x844
+ .debug_line    0x0000000000000000      0x844 /tmp/cc49U3wc.o
 
-.debug_str      0x0000000000000000     0x624c
- .debug_str     0x0000000000000000     0x624c /tmp/cc3aunl4.o
-                                       0x6474 (size before relaxing)
+.debug_str      0x0000000000000000     0x62cd
+ .debug_str     0x0000000000000000     0x62cd /tmp/cc49U3wc.o
+                                       0x650d (size before relaxing)
 
 .comment        0x0000000000000000       0x49
- .comment       0x0000000000000000       0x49 /tmp/cc3aunl4.o
+ .comment       0x0000000000000000       0x49 /tmp/cc49U3wc.o
                                          0x4a (size before relaxing)
 
 .ARM.attributes
                 0x0000000000000000       0x2d
  .ARM.attributes
-                0x0000000000000000       0x2d /tmp/cc3aunl4.o
+                0x0000000000000000       0x2d /tmp/cc49U3wc.o
  .ARM.attributes
                 0x000000000000002d       0x2d /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
                 0x000000000000005a       0x2d /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
 
-.debug_frame    0x0000000000000000      0x13c
- .debug_frame   0x0000000000000000       0xf4 /tmp/cc3aunl4.o
- .debug_frame   0x00000000000000f4       0x28 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x000000000000011c       0x20 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
+.debug_frame    0x0000000000000000      0x14c
+ .debug_frame   0x0000000000000000      0x104 /tmp/cc49U3wc.o
+ .debug_frame   0x0000000000000104       0x28 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x000000000000012c       0x20 /home/asaurus/app/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(lib_a-memset.o)
